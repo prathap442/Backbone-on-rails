@@ -1,0 +1,9 @@
+This is from the Template of the Categories
+<%for category in @collection.models:%>
+  <li>
+    <%= category.get('name')%>
+    <a href="<%="/categories/"+category.get('id')+"#/" %>" > 
+      <%= category.get('name') %>
+    </a>
+  </li>
+<%end%>
