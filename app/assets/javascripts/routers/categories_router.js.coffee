@@ -10,6 +10,7 @@ class EcommerceDeve.Routers.Categories extends Backbone.Router
     $('div#root_app').html(newView.render().el)
 
   rootPath: ->
+    alert("this is the rootpath of the woxlog")
     $('h1').html("Replacing woxlog paths")
     console.log("The root path is being rendered")
 

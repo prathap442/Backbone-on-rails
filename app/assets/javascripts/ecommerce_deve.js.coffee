@@ -11,3 +11,9 @@ window.EcommerceDeve =
 
 $(document).ready ->
   EcommerceDeve.initialize()
+
+$(document).on 'turbolinks:load', ->
+  Backbone.history.stop()
+  EcommerceDeve.initialize()
+
+  

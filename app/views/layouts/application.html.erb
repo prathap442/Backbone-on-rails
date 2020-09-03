@@ -4,13 +4,13 @@
     <title>EcommerceDeve</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all'%>
-    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <div id="root_app">
     </div>
+    <span>Rendering out the application.html.erb</span>
     <%= yield %>
   </body>
 </html>
